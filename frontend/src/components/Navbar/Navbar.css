@@ -1,0 +1,233 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.setnavbar{
+    background-color:white;
+    padding: 15px 0px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.navbar-right .navbar-search-fields{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar-right .serach-input{
+    width: 250px;
+    height: 30px;
+    padding: 0px 5px; 
+    border: 2px solid #b1b1b1;
+    border-radius: 5px;
+    outline-color: rgb(223, 158, 135);
+}
+.navbar-right .fa-magnifying-glass{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button,.setnavbar button{
+    background: black;
+    font-size: 16px;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+}
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid tomato;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+}
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.nav-profile-dropdown i{
+    font-size: 0.8rem;
+}
+.nav-profile-dropdown li:hover{
+    color: tomato;
+}
+
+
+@media (max-width: 1050px){
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media (max-width: 900px){
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media(max-width:885px){
+    .navbar,.setnavbar{
+        font-size: 0.8rem;
+    }
+    .navbar-menu{
+        font-size: 0.8rem;
+    }
+    .navbar-right .serach-input{
+        width: 180px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    .navbar-search-icon i{
+        font-size: 1rem;
+    }
+    .navbar-search-fields .fa-magnifying-glass{
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+@media(max-width:768px){
+    .navbar,.setnavbar{
+        font-size: 0.6rem;
+    }
+    .navbar-menu{
+        font-size: 0.6rem;
+    }
+    .navbar-right .serach-input{
+        width: 150px;
+        height: 20px;
+        font-size: 0.5rem;
+    }
+    .navbar-search-icon i{
+        font-size: 0.8rem;
+    }
+    .navbar-search-fields .fa-magnifying-glass{
+        font-size: 0.8rem;
+    }
+    .navbar button,.setnavbar button{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 750px){
+    .navbar-menu{
+        display: none;
+    }
+    
+    
+}
+
+@media(max-width:426px){
+    .navbar,.setnavbar{
+        font-size: 0.4rem;
+    }
+    .navbar-right .serach-input{
+        width: 130px;
+        height: 13px;
+        font-size: 0.3rem;
+        border-radius: 2px;
+    }
+    .navbar-search-icon i{
+        font-size: 0.6rem;
+    }
+    .navbar-search-fields .fa-magnifying-glass{
+        font-size: 0.6rem;
+    }
+    .navbar button,.setnavbar button{
+        font-size: 12px;
+        padding: 4px 16px;
+    }
+}
+
+@media(max-width:321px){
+    .navbar,.setnavbar{
+        font-size: 0.3rem;
+    }
+    .navbar-right .serach-input{
+        width: 100px;
+    }
+    
+    .navbar button,.setnavbar button{
+        font-size: 12px;
+        padding: 2px 15px 4px;
+    }
+}

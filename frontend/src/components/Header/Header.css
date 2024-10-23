@@ -1,0 +1,80 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/hero3.webp') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 90px;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+ /* .header{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    align-items: center;
+    background-color:rgb(209, 145, 27);
+ }
+/* .header-img img{
+    height: 30vw;
+    border-radius: 50%;
+} */ 
+
+@media (max-width:1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px){
+    
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
+
+@media(max-width:426px){
+    .header{
+        margin-top: 60px;
+    }
+    .header-contents h2{
+        font-size: 14px;
+    }
+    .header-contents button{
+        padding: 1vw 2vw;
+        font-size: 0.4rem;
+    }
+}
